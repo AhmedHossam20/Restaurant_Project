@@ -1,0 +1,857 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* HEADER SECTION............................................................................................. -->*/
+.header
+{
+    width: 100%;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    position: fixed;
+    z-index: 3;
+}
+
+.img1
+{
+width: 200px;
+height: 55px;
+margin-left: 200px;
+float: left;
+}
+.nav {
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+}
+    .nav   li{
+    display: inline-block;
+    color: #fff;
+    margin-right: 30px;
+    margin-top: 20px;
+
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration:none;
+    position: relative;
+    padding: 0 10px;
+}
+ .nav > li > a.active:after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+}
+.nav > li > a.active:hover::after{
+    width: 100%;
+    
+}
+.nav > li > a:after
+{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+}
+.nav > li > a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.homecontent{
+    height: 100vh;
+   position: relative;
+   background-image:url(../images/istockphoto-1442417585-612x612.jpg);
+   background-size: cover;
+}
+.homeoverlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/istockphoto-1442417585-612x612.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hometitles
+{
+width: 60%;
+   color: white;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+   text-align: center;
+   
+}
+.homeh1{
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.homep1{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 10px;
+    letter-spacing: 2px;
+}
+.btn{
+    font-size: 30px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 10px;
+    text-transform: capitalize;
+
+}
+.btn2{
+    color: #fff;
+    background-color: blue;
+    margin-left: 10px;
+}
+.btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+/* ABOUT SECTION............................................................................................. -->*/
+.aboutdiv{
+    width: 100%;
+    overflow: auto;
+    padding-top: 50px;
+}
+.abouttitle{
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 150px;
+}
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.container1{
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+}
+.aboutcontent
+{
+    overflow:auto;
+}
+.aboutitem
+{
+    width: 30%;
+    height: 200px;
+    border:1px solid  #888;
+    float: left;
+    text-align: center;
+    padding: 10px 10px;
+    position: relative;
+}
+.fr{
+    margin:  0px 5%;
+}
+.abouth1{
+margin-bottom: 10px;
+}
+.aboutp{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: gray;
+    line-height: 22px;
+    letter-spacing: 1px;
+    
+}
+.abouta{
+    color: blue;
+    text-decoration: none;
+}
+.aboutitem i{
+    color: rgb(39, 154, 207);
+    margin-bottom: 10px;
+    padding: 10px 10px;
+}
+.aboutitem:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    z-index: -1;
+   
+}
+.aboutitem:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+    
+}
+.aboutitem:hover .abouth1 {
+    color: #fff;
+    transition: color 1s;
+   
+}
+.aboutitem:hover .aboutp {
+    color: #fff;
+    transition: color 1s;
+   
+}
+/* MENU SECTION............................................................................................. -->*/
+.menusection{
+    background-color: bisque;
+    height: 900px;
+}
+.menuh1{
+ text-align: center;   
+}
+.line2{
+    width: 100px;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+}
+.container2{
+    width: 80%;
+    height: 150vh;
+    margin: auto;
+}
+.menucontent
+{
+    margin-top: -60px;
+    overflow:auto;
+}
+.menutitle{
+    padding: 120px;
+}
+.menuitem
+{
+    position: relative;
+    width: 30%;
+   float: left;
+   text-align: center;
+   padding: 20px 20px;
+}
+.tt
+{
+    margin: 0px 5%;
+}
+.imgg
+{
+    width: 290px;
+    height: 290px;
+}
+.overlayofmenu
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+}
+.menuitem:hover .overlayofmenu
+{
+visibility: visible;
+
+}
+.contentofmenu
+{
+    position: absolute;
+    margin: auto;
+    top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+   text-align: center;
+   color: #fff;
+   font-size: 50px;
+}
+.category{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+.pizzap{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 10px;
+}
+.contentofmenu a i 
+{
+    line-height: 40px;
+    font-size: 40px;
+    background-color: rgb(88, 132, 173);
+}
+
+/* QUALITY SECTION............................................................................................. -->*/
+.qualitysection{
+    height: 800px;
+    background-color: beige;
+}
+.qualityh1{
+   text-align: center;
+   padding-top: 50px;
+   font-size: 40px;
+}
+.qualitycontent
+{
+    margin-top: 50px;
+    overflow: auto;
+    text-align: left;
+    position: relative;
+}
+.qualityitem .icon{
+    position: absolute;
+    left:5px;
+    top:20px;
+    color:#6195ff;
+    font-size: 40px;
+    }
+    .qualityitem h1{
+        padding: 10px 10px;
+        text-align: left;
+        font-size: 20px;
+    }
+    .qualityitem p
+    {
+        padding: 10px 0px;
+        text-align: left;
+    }
+.qualityitem{
+    width: 30%;
+    height: 250px;
+    border: 1px solid gray;
+    float: left;
+    padding: 20px 40px;
+    margin-bottom:20px ;
+    position: relative;
+    text-align: left;
+}
+
+.qualityitem:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:black;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.qualityitem:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+    
+}
+.qualityitem:hover p{
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    margin-top: 50px;
+}
+.qualityitem:hover h1{
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+}
+
+.qualityitem:hover .icon{
+   position: absolute;
+    left:5px;
+    top:20px;
+    color:#6195ff;
+    font-size: 40px;
+    z-index: 1;
+    }
+/* CHOOSE SECTION............................................................................................. -->*/
+.choosesection
+{
+    height: 600px;
+    background-color: gray;
+    
+}
+.choosecontent{
+    overflow: auto;
+}
+.line3{
+    width: 85px;
+    height: 5px;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+.chooseitem
+{
+    width: 45%;
+    float: left;
+    padding: 100px 0;
+}
+.chooseimg
+{
+    width: 50%;
+    margin-left: 20%;
+}
+.chooseheader{
+    font-size: 30px;
+}
+.gg{
+    margin-left: 5%;
+}
+.ss{
+    display: block;
+    padding: 5px 0;
+}
+.pp{
+    margin-bottom: 10px;
+}
+.service{
+    color: blue;
+    margin-left: 250px;
+}
+.service-bullets li{
+    width:10px;
+    height:10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 10px 5px;
+    border-radius: 50%;
+    
+}
+.service-bullets li.active{
+    background-color: #6195ff;
+}
+.service-bullets li:hover{
+    background-color: #6195ff;
+}
+/* NUMBER SECTION............................................................................................. -->*/
+.numbersection{
+    background-image: url(../images/ahmed-pizza.png);
+    background-attachment: fixed;
+}
+.overlaynumbersection{
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.numberoffirstsections{
+    overflow: auto;
+}
+.numberfirstsection{
+    float: left;
+    color: #fff;
+    width: 25%;
+    padding: 8% 10%;
+    font-size: 20px;
+}
+.numberfirstsection i{
+    color: #6195ff;
+    margin-bottom: 15px;
+    font-size: 40px;
+    text-align: center;
+}
+.numberfirstsection span{
+   
+    font-size: 15px;
+}
+/* PRICE SECTION............................................................................................. -->*/
+.pricingitem{
+    float: left;
+    width: 30%;
+    padding: 5% 5%;
+    border: 1px solid grey;
+    text-align: center;
+    position: relative;
+}
+.pricingitemtext{
+    text-transform: uppercase;
+    font-size: 17px;
+    color:#999;
+    margin: auto;
+}
+
+.titleprice{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 80px;
+    
+}
+.dd{
+    margin: 0 5%;
+}
+.pricingcontent{
+    margin-top: 50px;
+    overflow: auto;
+  
+}
+.pricingsection{
+    background-color: antiquewhite;
+    height: 600px;
+}
+.priceitem{
+    width: 50%;
+    float: left;
+    padding: 10% 10%;
+}
+
+.pricesection{
+    height: 400px;
+    background-image: url(../images/ahmed-pizza.png);
+    background-attachment: fixed;
+}
+.pricingpermonth{
+    width: 100px;
+    height: 100px;
+   padding:12px 0;
+    margin: 20px auto;
+    border: 2px solid #6195ff;
+    border-radius: 50%;
+}
+.pricingpermonth  h3{
+text-align: center;
+font-size: 50px;
+}
+.pricingpermonth span{
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.pricinglist{
+    list-style: none;
+    padding: 5px 5px;
+}
+.pricinglist li{
+    
+    padding: 3px 3px;
+}
+.pricingitembutton{
+    padding: 5px 5px;
+    border: 3px solid #6195ff;
+}
+.pricingitem:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: #0b0c0c;
+    transition: 0.5s;
+    opacity:0;
+}
+.pricingitem:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity:0.5;
+}
+.pricingitem:hover .pricingitemtext{
+    color: rgb(236, 11, 11);
+}
+.pricingitem:hover .pricingpermonth{
+    color: rgb(245, 12, 12);
+    transition: 1s;
+}
+/* TEST SECTION............................................................................................. -->*/
+.testsection{
+    height: 300px;
+    background-image: url(../images/ahmed-pizza.png);
+    background-attachment: fixed;
+    position: relative;
+}
+.overlaytest{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.testbigdiv{
+    overflow: auto;
+    width: 90%;
+    margin: auto;
+}
+.testitem{
+    float: left;
+    width: 45%;
+    color: #fff;
+    padding-right: 20px;
+    padding-top: 55px;
+    margin-bottom: 110px;
+}
+.bb{
+margin: 0 5%;
+}
+.itemtitlee{
+    padding:90px 20px 10px 150px;
+    position:relative;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.imgh{
+    position: absolute;
+    top: 82px;
+    left: 65px;
+    border-radius: 50%;
+ }
+
+.lol{
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-left: 76px;
+    font-size: 14px;
+    margin-top: 35px;
+}
+.itemtitlee span{
+    color: #6195ff;
+    padding: 0 20px;
+}
+.itemtitlee h4{
+    color: white;
+    padding: 0 0;
+    margin-left: 20px;
+}
+/* TEAM SECTION............................................................................................. -->*/
+.teamsection{
+    height: 600px;
+    background-color: white;
+}
+.h2team{
+    text-align: center;
+    font-size: 30px;
+}
+.teamdiv{
+    position: relative;
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: grey;
+    
+}
+.vv{
+    margin: 0 5%;
+}
+.teamtitle{
+padding-top: 100px;
+}
+.teambiggerdiv{
+    margin-top: 70px;
+    overflow: auto;
+}
+.teamcontent{
+    width: 85%;
+    margin: auto;
+    position: relative;
+}
+.teamcontent img{
+    width:100%
+}
+.overlayteam{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+.teamcontent:hover .overlayteam{
+    visibility: visible;
+    z-index: 2;
+}
+
+.overlayteam a{
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(6, 70, 80);
+    margin-left: auto;
+}
+.overlayteam a i{
+    line-height: 40px;
+}
+.teamdiv:after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0;
+}
+.teamdiv:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+.teamdiv:hover h3{
+    color: white;
+}
+.teamdiv:hover span{
+    color: blue;
+}
+.team-info span{
+    color: brown;
+    letter-spacing: 1px;
+}
+/* BLOG SECTION............................................................................................. -->*/
+.blogsection{
+    height: 600px;
+    background-color: bisque;
+    }
+.sectiontitle{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+.blogitem{
+    width: 30%;
+    float: left;
+    position: relative;
+    text-align: left;
+    padding: 20px 20px;
+}
+.mg{
+margin:0 5%;
+}
+.bloginfo ul li{
+    display: inline;
+}
+.bloginfo ul li i
+{
+    color: blue;
+}
+.bloginfo ul{
+    padding: 10px;
+}
+.blogitemimg
+{
+    padding: 10px;
+}
+.blogtitle{
+    padding: 10px;
+    text-align: left;
+}
+.blogp{
+    padding: 10px;
+    text-align: left;
+    color: gray;
+}
+.bloglink
+{
+    padding: 10px;
+    text-align: left;
+    color: blue;
+    text-decoration: none;
+}
+.blogitem:after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: blue;
+    opacity: 0;
+}
+.blogitem:hover::after{
+    width: 100%;
+    height: 100%; 
+    opacity: 0.5;
+    transition: 1s;
+}
+
+/* FOOTER SECTION............................................................................................. -->*/
+.footer{
+    padding-top: 60px;
+    margin: auto;
+    text-align: center;
+    height: 300px;
+    background-color: gray;
+}
+.footer-links{
+    margin: 20PX 0;
+    list-style: none;
+}
+.footer-links li {
+    
+    display: inline-block;
+    background-color: #6195ff;
+    width:50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    color: #fff;
+}
+.footer-links li a{
+    display: block;
+    width:100%;
+    height: 100%;
+    color:#6195ff;
+    color: #fff;
+    line-height: 50px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 23px;
+    margin: 0 8px;
+}
+.footer-links li:after{
+    position: absolute;
+    content: "";
+    opacity: 0;
+    transition: .3s;
+    background-color: #0954ec;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+}
+.footer-links li:hover:after{
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+}
+.footer p{
+    color:#999;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+
+
